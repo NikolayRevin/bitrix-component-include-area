@@ -27,7 +27,7 @@
 1. Прямой вывод
 ```php
 <?echo $APPLICATION->IncludeComponent(
-	"ptb:include.area",
+"ptb:include.area",
 	"",
 	Array(
 		"CACHE_TIME" => "36000000",
