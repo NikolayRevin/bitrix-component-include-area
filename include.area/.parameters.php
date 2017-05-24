@@ -40,6 +40,16 @@ $arComponentParameters = array(
             "ADDITIONAL_VALUES" => "Y",
             "REFRESH" => "Y"
         ),
+        "TYPE" => array(
+            "PARENT" => "BASE",
+            "NAME" => Loc::getMessage("PTB_IBLOCK_DESC_TYPE"),
+            "TYPE" => "LIST",
+            "VALUES" => array(
+                "RETURN" =>  Loc::getMessage("PTB_IBLOCK_DESC_TYPE_RETURN"),
+                "TEMPLATE" => Loc::getMessage("PTB_IBLOCK_DESC_TYPE_TEMPLATE"),
+            ),
+            "DEFAULT" => "RETURN"
+        ),
         "IBLOCK_CODE" => array(
             "PARENT" => "BASE",
             "NAME" => Loc::getMessage("PTB_IBLOCK_CODE"),

@@ -16,6 +16,7 @@ class CPtbIncludeAreaComponent extends \CBitrixComponent
         $arParams['ELEMENT_CODE'] = trim($arParams['ELEMENT_CODE']);
         $arParams['IBLOCK_ID'] = (int) $arParams['IBLOCK_ID'];
         $arParams['CACHE_TIME'] = (int) $arParams['CACHE_TIME'];
+        $arParams['TYPE'] = empty($arParams['TYPE']) ? 'RETURN' : $arParams['TYPE'];
 
         if ($arParams['IBLOCK_ID'] <= 0 && ! $arParams['IBLOCK_CODE']) {
             throw new SystemException('Not found iblock id or iblock code');
@@ -105,8 +106,10 @@ class CPtbIncludeAreaComponent extends \CBitrixComponent
             }
         }
 
-        $this->includeComponentTemplate();
-
-        return $arResult['TEXT'];
+        if ($arParams['TYPE'] == 'TEMPLATE') {
+            $this->includeComponentTemplate();
+        } else {
+            return $arResult['TEXT'];
+        }
     }
 }
