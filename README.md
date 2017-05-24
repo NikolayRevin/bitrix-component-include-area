@@ -27,33 +27,33 @@
 1. Прямой вывод
 ```php
 <?echo $APPLICATION->IncludeComponent(
-"ptb:include.area",
-	"",
-	Array(
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"ELEMENT_CODE" => "test",
-		"IBLOCK_CODE" => "",
-		"IBLOCK_ID" => "1",
-		"IBLOCK_TYPE" => "info",
-		"TYPE" => "RETURN"
-	)
+  "ptb:include.area",
+  "",
+  Array(
+    "CACHE_TIME" => "36000000",
+    "CACHE_TYPE" => "A",
+    "ELEMENT_CODE" => "test",
+    "IBLOCK_CODE" => "",
+    "IBLOCK_ID" => "1",
+    "IBLOCK_TYPE" => "info",
+    "TYPE" => "RETURN"
+  )
 );?>
 ```
 
 2. Через шаблон
 ```php
 <?$APPLICATION->IncludeComponent(
-	"ptb:include.area",
-	".default",
-	Array(
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"ELEMENT_CODE" => "test",
-		"IBLOCK_CODE" => "",
-		"IBLOCK_ID" => "1",
-		"IBLOCK_TYPE" => "info",
-		"TYPE" => "TEMPLATE"
-	)
+  "ptb:include.area",
+  ".default",
+  Array(
+    "CACHE_TIME" => "36000000",
+    "CACHE_TYPE" => "A",
+    "ELEMENT_CODE" => "test",
+    "IBLOCK_CODE" => "",
+    "IBLOCK_ID" => "1",
+    "IBLOCK_TYPE" => "info",
+    "TYPE" => "TEMPLATE"		
+  )
 );?>
 ```
